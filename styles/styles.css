@@ -472,6 +472,8 @@ p {
     padding-left: 16px;
     margin-right: 12px;
     transition: border var(--standart-trans);
+    background-color: transparent;
+    color: var(--white);
 }
 .subscribe-field:focus{
     outline: transparent;
@@ -644,10 +646,16 @@ p {
     border-radius: 4px;
 }
 
-
 .modal-icon{
     fill: var(--main-color);
+    transition: fill var(--standart-trans);
 }
+
+.modal-icon:hover, .modal-icon:focus{
+    fill: var(--active-color);
+    transition: fill var(--standart-trans);
+}
+
 
 .modal-btn{
     position: absolute;
@@ -719,6 +727,7 @@ p {
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
     margin-bottom: 20px;
+    resize: none;
 }
 
 .signup-icon {
